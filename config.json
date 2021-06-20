@@ -1,42 +1,72 @@
 {
-  "EnableProxy": false,  
-  "Proxy": "",  
-  "RedisHost": "",  
-  "CheckSec": 30, 
-  "ExpressPort": 3000,  
-  "DownloadQuality": "best",  
-  "DownloadDir": "/vtb_record/outdir",  
-  "EnableTS2MP4": false,  
+  "NormalCheckSec": 30,
+  "CriticalCheckSec": 25,
+  "DownloadQuality": "best",
+  "DownloadDir": "/vtb_record/outdir",
+  "EnableTS2MP4": true,
+  "SRT": false,
+  "VTT": true,
   "Module": [
     {
-      "Name": "Bilibili",
-      "Enable": true,
+      "Name": "Youtube",
+      "Enable": false,
+      "EnableProxy": true,
+      "Proxy": "127.0.0.1:10801",
+      "DownloadProvider": "streamlink",
       "Users": [
         {
-          "TargetId": "1612112",
-          "Name": "夏诺雅_shanoa",
-          "NeedDownload": true,
-          "NeedCQBot": false,
-          "CQHost": "",
-          "CQToken": "",
-          "QQGroupID": [
-          ]
+          "TargetId": "UCQ0UDLQCjY0rmuxCDE38FGg",
+          "Name": "natsuiromatsuri",
+          "NeedDownload": false,
+          "CQConfig": {
+            "NeedCQBot": true,
+            "CQHost": "127.0.0.1:5700",
+            "CQToken": "",
+            "QQGroupID": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Twitcasting",
+      "Enable": false,
+      "DownloadProvider": "streamlink",
+      "Users": [
+        {
+          "TargetId": "natsuiromatsuri",
+          "Name": "natsuiromatsuri",
+          "NeedDownload": false,
+          "CQConfig": {
+            "NeedCQBot": true,
+            "CQHost": "127.0.0.1:5700",
+            "CQToken": "",
+            "QQGroupID": [
+              ""
+            ]
+          }
         }
       ]
     },
     {
       "Name": "Bilibili",
       "Enable": true,
+      "UseFollowPolling": true,
+      "DownloadProvider": "streamlink",
       "Users": [
         {
-          "TargetId": "10522083",
-          "Name": "Kaffu Chino test",
+          "TargetId": "1612112",
+          "Name": "夏诺雅_SHANOA",
           "NeedDownload": true,
-          "NeedCQBot": false,
-          "CQHost": "",
-          "CQToken": "",
-          "QQGroupID": [
-          ]
+          "CQConfig": {
+            "NeedCQBot": false,
+            "CQHost": "",
+            "CQToken": "",
+            "QQGroupID": [
+              ""
+            ]
+          }
         }
       ]
     }
