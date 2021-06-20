@@ -68,6 +68,22 @@
           ]
         }
       ]
+    },
+    {
+      "Name": "Bilibili",
+      "Enable": true,
+      "Users": [
+        {
+          "TargetId": "10522083",
+          "Name": "Kaffu Chino test",
+          "NeedDownload": true,
+          "NeedCQBot": false,
+          "CQHost": "",
+          "CQToken": "",
+          "QQGroupID": [
+          ]
+        }
+      ]
     }
   ]
 }
