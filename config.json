@@ -5,7 +5,7 @@
   "CheckSec": 30, 
   "ExpressPort": 3000,  
   "DownloadQuality": "best",  
-  "DownloadDir": "./vtb_record/outdir",  
+  "DownloadDir": "/vtb_record/outdir",  
   "EnableTS2MP4": false,  
   "Module": [
     {
