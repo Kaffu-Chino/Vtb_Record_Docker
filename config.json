@@ -1,0 +1,62 @@
+{
+  "EnableProxy": false,  // 是否启用代理
+  "Proxy": "127.0.0.1:10800",  //代理地址，应为socks5代理
+  "RedisHost": "127.0.0.1:6379",  //Redis数据库地址 用于启用上传功能，不使用无需配置
+  "CheckSec": 30,  // 检测间隔
+  "ExpressPort": 3000,  // 配置同传获取服务器的端口，详细见后文
+  "DownloadQuality": "best",  // 配置下载画质 best为最佳画质 建议不调整 可选: best 1080p60 720p
+  "DownloadDir": "/vtb_recoed/outdir",  // 下载目录 注意后无斜杠
+  "EnableTS2MP4": false,  // 是否启用ts转码mp4（关闭后断流文件不会合并
+  "Module": [
+    {
+      "Name": "Youtube",  // 模块名，以下类推
+      "Enable": false,  // 是否启用该模块
+      "Users": [  // 监测对象配置，详细见下文
+        {
+          "TargetId": "UCQ0UDLQCjY0rmuxCDE38FGg",
+          "Name": "natsuiromatsuri",
+          "NeedDownload": true,
+          "NeedCQBot": true,
+          "CQHost": "",
+          "CQToken": "",
+          "QQGroupID": [
+            ""
+          ],
+          "TransBiliId": "336731767"
+        }
+      ]
+    },
+    {
+      "Name": "Twitcasting",
+      "Enable": false,
+      "Users": [
+        {
+          "TargetId": "natsuiromatsuri",
+          "Name": "natsuiromatsuri",
+          "NeedDownload": true,
+          "NeedCQBot": true,
+          "CQHost": "",
+          "CQToken": "",
+          "QQGroupID": [],
+          "TransBiliId": "336731767"
+        }
+      ]
+    },
+    {
+      "Name": "Bilibili",
+      "Enable": true,
+      "Users": [
+        {
+          "TargetId": "1612112",
+          "Name": "夏诺雅_shanoa",
+          "NeedDownload": true,
+          "NeedCQBot": false,
+          "CQHost": "",
+          "CQToken": "",
+          "QQGroupID": [
+          ]
+        }
+      ]
+    }
+  ]
+}
