@@ -2,7 +2,7 @@
 
 [Vtb_Record](https://github.com/NyaMisty/Vtb_Record) runing in Docker
 
-## 部署方法（Ubuntu）
+## 部署方法
 
 * 1、复制或修改Dockerfile，根据文档创建新仓库上传配置文件`config.json`
 * 2、创建镜像`docker image build ./ -t record_bili:v1.1`等待完成
