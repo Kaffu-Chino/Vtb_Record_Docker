@@ -67,6 +67,19 @@
               ""
             ]
           }
+        },
+        {
+          "TargetId": "6783704",
+          "Name": "酥幼妹妹わ",
+          "NeedDownload": true,
+          "CQConfig": {
+            "NeedCQBot": false,
+            "CQHost": "",
+            "CQToken": "",
+            "QQGroupID": [
+              ""
+            ]
+          }
         }
       ]
     }
